@@ -1,0 +1,24 @@
+{
+  "name": "csiro-org-history-a",
+  "version": "1.0.0",
+  "description": "Visualizing cpmplex organizational hierarchy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdecoder01/csiro-org-history-a.git"
+  },
+  "author": "Ankit Sehgal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderdecoder01/csiro-org-history-a/issues"
+  },
+  "homepage": "https://github.com/coderdecoder01/csiro-org-history-a#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1"
+  }
+}
