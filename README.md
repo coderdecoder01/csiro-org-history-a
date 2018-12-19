@@ -1,2 +1,2 @@
 # csiro-org-history-a
-Visualizing a complex organizational history
+API for accessing Organizational History for CSIRO
