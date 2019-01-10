@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/coderdecoder01/csiro-org-history-a#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "express-graphql": "^0.7.1"
+    "express-graphql": "^0.7.1",
+    "express-validator": "^5.3.1",
+    "path": "^0.12.7"
   }
 }
