@@ -1,4 +1,4 @@
-# csiro-org-history-a
+# CSIRO-org-history-a (Team A)
 
 Front End Website for querying and analyzing CSIRO organizational history
 
