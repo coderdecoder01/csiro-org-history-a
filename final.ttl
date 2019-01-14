@@ -1,7 +1,3 @@
-# baseURI: file:///C:/Users/cox075/dev/aays-models/data/CSIRO-history-converted-from-EOAS.ttl
-# imports: http://network.csiro.au/ontology/core
-# imports: https://www.w3.org/ns/org
-
 @prefix csiro: <http://org.csiro.au/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
