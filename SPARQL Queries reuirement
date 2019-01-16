@@ -1,0 +1,12 @@
+SPARQL Queries requirement
+
+
+1)Query to list out all the new organisations and their parental organisations
+
+2) Query to display organisation along with its name, description and formation date
+
+3) Query to count the numbers of units in organisations
+
+4) Query to display creation and end date of each organization
+
+5) Query to list all the primary sites of CSIRO

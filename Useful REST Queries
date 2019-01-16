@@ -1,0 +1,9 @@
+Count number of units in each organization
+
+http://23.101.230.37:7200/repositories/CSIRO?query= PREFIX org: <http://www.w3.org/ns/org%23> SELECT  (?s AS ?Organization) (COUNT(?o) AS ?Count) WHERE{ ?s org:hasUnit ?o  . }  GROUP BY ?s
+
+
+Get List of all organizational units
+
+http://23.101.230.37:7200/repositories/CSIRO?query= PREFIX org: <http://www.w3.org/ns/org%23> SELECT ?s  WHERE{
+    ?s a org:OrganizationalUnit } 
