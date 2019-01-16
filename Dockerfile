@@ -1,7 +1,5 @@
 FROM ubuntu:18.04
 
-MAINTAINER Ivan Subotic "ivan.subotic@unibas.ch"
-
 # Silence debconf messages
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
