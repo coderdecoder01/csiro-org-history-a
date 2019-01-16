@@ -1,3 +1,7 @@
+# baseURI: file:///C:/Users/cox075/dev/aays-models/data/CSIRO-history-converted-from-EOAS.ttl
+# imports: http://network.csiro.au/ontology/core
+# imports: https://www.w3.org/ns/org
+
 @prefix csiro: <http://org.csiro.au/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -96,6 +100,1255 @@ csiro:A000195
   prov:invalidatedAtTime "1949-05-19"^^xsd:date ;
   foaf:name "Council for Scientific and Industrial Research (CSIR)"^^xsd:string ;
 .
+csiro:A000159-x a org:ChangeEvent ;
+    rdfs:label "Australian National Animal Health Laboratory (ANAHL) - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000159 ;
+    prov:endedAtTime "1985-10-31"^^xsd:date .
+
+csiro:A000195-x a org:ChangeEvent ;
+    rdfs:label "Council for Scientific and Industrial Research (CSIR) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000195 ;
+    prov:endedAtTime "1949-05-19"^^xsd:date .
+
+csiro:A000196-x a org:ChangeEvent ;
+    rdfs:label "Commonwealth Scientific and Industrial Research Organisation (CSIRO) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000196 .
+
+csiro:A000212-x a org:ChangeEvent ;
+    rdfs:label "Australian Nuclear Science and Technology Organisation (ANSTO) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000212 .
+
+csiro:A000217-x a org:ChangeEvent ;
+    rdfs:label "Advisory Council of Science and Industry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000217 ;
+    prov:endedAtTime "1920-09-14"^^xsd:date .
+
+csiro:A000218-x a org:ChangeEvent ;
+    rdfs:label "Commonwealth Institute of Science and Industry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000218 ;
+    prov:endedAtTime "1926-06-21"^^xsd:date .
+
+csiro:A000219-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Radiophysics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000219 ;
+    prov:endedAtTime "1996-09-20"^^xsd:date .
+
+csiro:A000220-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Animal Health - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000220 ;
+    prov:endedAtTime "2000-07-01"^^xsd:date .
+
+csiro:A000293-x a org:ChangeEvent ;
+    rdfs:label "Defence Research Laboratories - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000293 ;
+    prov:endedAtTime "1953-10-30"^^xsd:date .
+
+csiro:A000294-x a org:ChangeEvent ;
+    rdfs:label "Aeronautical and Maritime Research Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000294 ;
+    prov:endedAtTime "2002-12-31"^^xsd:date .
+
+csiro:A000309-x a org:ChangeEvent ;
+    rdfs:label "Aeronautical Research Laboratories - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000309 ;
+    prov:endedAtTime "1994-03-31"^^xsd:date .
+
+csiro:A000310-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Central Experimental Workshops - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000310 ;
+    prov:endedAtTime "1955-12-31"^^xsd:date .
+
+csiro:A000311-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Dairy Research Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000311 ;
+    prov:endedAtTime "1962-07-02"^^xsd:date .
+
+csiro:A000312-x a org:ChangeEvent ;
+    rdfs:label "CSIR Division of Aeronautics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000312 ;
+    prov:endedAtTime "1949-02-10"^^xsd:date .
+
+csiro:A000313-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Meat, Dairy and Aquaculture Sector - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000313 .
+
+csiro:A000314-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Applied Chemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000314 ;
+    prov:endedAtTime "1974-02-24"^^xsd:date .
+
+csiro:A000385-x a org:ChangeEvent ;
+    rdfs:label "Munitions Supply Laboratories (MSL) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000385 ;
+    prov:endedAtTime "1948-07-01"^^xsd:date .
+
+csiro:A000400-x a org:ChangeEvent ;
+    rdfs:label "Australian Atomic Energy Commission, Research Establishment - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000400 ;
+    prov:endedAtTime "1981-09-30"^^xsd:date .
+
+csiro:A000416-x a org:ChangeEvent ;
+    rdfs:label "Australian Objective Measurement Project (AOMP) - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000416 ;
+    prov:endedAtTime "1971-12-31"^^xsd:date .
+
+csiro:A000519-x a org:ChangeEvent ;
+    rdfs:label "Baas Becking Geobiological Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000519 ;
+    prov:endedAtTime "1985-12-31"^^xsd:date .
+
+csiro:A000570-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Building Research [I] - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000570 ;
+    prov:endedAtTime "1971-05-24"^^xsd:date .
+
+csiro:A000571-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Chemical and Wood Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000571 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000572-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Chemical Engineering - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000572 ;
+    prov:endedAtTime "1978-12-31"^^xsd:date .
+
+csiro:A000573-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Electrotechnology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000573 ;
+    prov:endedAtTime "1962-12-31"^^xsd:date .
+
+csiro:A000574-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Section of Mathematical Instruments - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000574 ;
+    prov:endedAtTime "1959-12-31"^^xsd:date .
+
+csiro:A000575-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Entomology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000575 .
+
+csiro:A000576-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Food Preservation and Transport - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000576 ;
+    prov:endedAtTime "1960-06-30"^^xsd:date .
+
+csiro:A000577-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Food Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000577 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000578-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Industrial Chemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000578 ;
+    prov:endedAtTime "1958-10-08"^^xsd:date .
+
+csiro:A000579-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Forest Products (mark I) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000579 ;
+    prov:endedAtTime "1971-05-24"^^xsd:date .
+
+csiro:A000580-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Forest Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000580 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000581-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Fossil Fuels - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000581 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000582-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Chemical Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000582 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000583-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Materials Science and Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000583 ;
+    prov:endedAtTime "1997-12-31"^^xsd:date .
+
+csiro:A000584-x a org:ChangeEvent ;
+    rdfs:label "CSIR Food Preservation and Transport Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000584 ;
+    prov:endedAtTime "1940-12-31"^^xsd:date .
+
+csiro:A000585-x a org:ChangeEvent ;
+    rdfs:label "Commonwealth Forestry Bureau - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000585 ;
+    prov:endedAtTime "1946-04-01"^^xsd:date .
+
+csiro:A000586-x a org:ChangeEvent ;
+    rdfs:label "Forestry and Timber Bureau - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000586 ;
+    prov:endedAtTime "1978-02-28"^^xsd:date .
+
+csiro:A000587-x a org:ChangeEvent ;
+    rdfs:label "Forest Research Institute - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000587 ;
+    prov:endedAtTime "1975-12-31"^^xsd:date .
+
+csiro:A000588-x a org:ChangeEvent ;
+    rdfs:label "CSIR Wool Processing Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000588 ;
+    prov:endedAtTime "1939-12-31"^^xsd:date .
+
+csiro:A000589-x a org:ChangeEvent ;
+    rdfs:label "CSIR Biochemistry Unit - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000589 ;
+    prov:endedAtTime "1958-12-31"^^xsd:date .
+
+csiro:A000590-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Applied Organic Chemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000590 ;
+    prov:endedAtTime "1988-01-31"^^xsd:date .
+
+csiro:A000591-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Atmospheric Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000591 ;
+    prov:endedAtTime "2005-06-30"^^xsd:date .
+
+csiro:A000592-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Chemical Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000592 ;
+    prov:endedAtTime "1987-01-01"^^xsd:date .
+
+csiro:A000593-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Computing Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000593 ;
+    prov:endedAtTime "1986-12-31"^^xsd:date .
+
+csiro:A000594-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Marine Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000594 ;
+    prov:endedAtTime "2005-07-01"^^xsd:date .
+
+csiro:A000595-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Tribophysics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000595 ;
+    prov:endedAtTime "1978-12-31"^^xsd:date .
+
+csiro:A000596-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Tropical Crops and Pastures - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000596 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A000597-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Water and Land Resources - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000597 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000598-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Wildlife and Ecology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000598 ;
+    prov:endedAtTime "2000-12-31"^^xsd:date .
+
+csiro:A000599-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Wildlife Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000599 ;
+    prov:endedAtTime "1982-12-31"^^xsd:date .
+
+csiro:A000600-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Wildlife and Rangelands Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000600 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000601-x a org:ChangeEvent ;
+    rdfs:label "CSIRO National Measurement Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000601 ;
+    prov:endedAtTime "1979-01-01"^^xsd:date .
+
+csiro:A000602-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Office of Space Science and Applications (COSSA) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000602 ;
+    prov:endedAtTime "1996-06-30"^^xsd:date .
+
+csiro:A000603-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Rangeland Research Centre - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000603 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A000604-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Computing Services (CSIRONET) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000604 ;
+    prov:endedAtTime "1985-12-31"^^xsd:date .
+
+csiro:A000605-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Plastic Banknote Project - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000605 .
+
+csiro:A000606-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Project Ambassador - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000606 .
+
+csiro:A000607-x a org:ChangeEvent ;
+    rdfs:label "Sirotech Limited - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000607 ;
+    prov:endedAtTime "1993-07-01"^^xsd:date .
+
+csiro:A000608-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Wildlife Survey Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000608 ;
+    prov:endedAtTime "1962-12-31"^^xsd:date .
+
+csiro:A000609-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Textile and Fibre Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000609 .
+
+csiro:A000610-x a org:ChangeEvent ;
+    rdfs:label "Australian Atomic Energy Commission Research Laboratories - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000610 ;
+    prov:endedAtTime "1987-04-27"^^xsd:date .
+
+csiro:A000611-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Chemical Physics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000611 ;
+    prov:endedAtTime "1958-12-31"^^xsd:date .
+
+csiro:A000612-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Chemical Research Laboratories - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000612 ;
+    prov:endedAtTime "1970-08-30"^^xsd:date .
+
+csiro:A000613-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Wool Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000613 ;
+    prov:endedAtTime "1999-12-31"^^xsd:date .
+
+csiro:A000614-x a org:ChangeEvent ;
+    rdfs:label "Institute of Industrial Technology - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000614 ;
+    prov:endedAtTime "1986-12-31"^^xsd:date .
+
+csiro:A000615-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Protein Chemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000615 ;
+    prov:endedAtTime "1988-01-01"^^xsd:date .
+
+csiro:A000616-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Textile Industry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000616 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000617-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Textile Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000617 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000618-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Construction and Engineering - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000618 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000619-x a org:ChangeEvent ;
+    rdfs:label "Institute of Minerals, Energy and Construction (IMEC) - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000619 ;
+    prov:endedAtTime "1996-06-30"^^xsd:date .
+
+csiro:A000620-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Building, Construction and Engineering - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000620 ;
+    prov:endedAtTime "2002-07-31"^^xsd:date .
+
+csiro:A000621-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Built Environment Sector - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000621 ;
+    prov:endedAtTime "2002-12-31"^^xsd:date .
+
+csiro:A000622-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Building Material Research Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000622 ;
+    prov:endedAtTime "1950-12-31"^^xsd:date .
+
+csiro:A000623-x a org:ChangeEvent ;
+    rdfs:label "Institute of Energy and Earth Resources - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000623 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000624-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mineral Chemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000624 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000625-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mineral Engineering - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000625 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000626-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mineral and Process Engineering - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000626 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A000627-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Minerals Division - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000627 .
+
+csiro:A000628-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Food Processing - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000628 ;
+    prov:endedAtTime "1992-12-31"^^xsd:date .
+
+csiro:A000629-x a org:ChangeEvent ;
+    rdfs:label "Institute of Animal Production and Processing - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000629 ;
+    prov:endedAtTime "1996-06-30"^^xsd:date .
+
+csiro:A000630-x a org:ChangeEvent ;
+    rdfs:label "Food Science Australia - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000630 .
+
+csiro:A000631-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Food Processing Sector - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000631 .
+
+csiro:A000632-x a org:ChangeEvent ;
+    rdfs:label "Institute of Animal and Food Sciences - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000632 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000633-x a org:ChangeEvent ;
+    rdfs:label "Institute of Earth Resources - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000633 ;
+    prov:endedAtTime "1981-09-30"^^xsd:date .
+
+csiro:A000634-x a org:ChangeEvent ;
+    rdfs:label "Institute of Biological Resources - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000634 ;
+    prov:endedAtTime "1986-12-31"^^xsd:date .
+
+csiro:A000635-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Forestry and Forest Products (mark I) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000635 ;
+    prov:endedAtTime "1990-12-31"^^xsd:date .
+
+csiro:A000636-x a org:ChangeEvent ;
+    rdfs:label "Institute of Plant Production and Processing - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000636 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A000637-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Forestry, Wood and Paper Industries Sector - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000637 .
+
+csiro:A000638-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Coal Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000638 ;
+    prov:endedAtTime "1990-06-30"^^xsd:date .
+
+csiro:A000639-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mineral Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000639 ;
+    prov:endedAtTime "1986-12-31"^^xsd:date .
+
+csiro:A000641-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Petroleum Sector - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000641 .
+
+csiro:A000642-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Chemicals and Polymers - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000642 ;
+    prov:endedAtTime "1997-07-01"^^xsd:date .
+
+csiro:A000643-x a org:ChangeEvent ;
+    rdfs:label "Institute of Physical Sciences - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000643 ;
+    prov:endedAtTime "1988-01-01"^^xsd:date .
+
+csiro:A000644-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Atmospheric Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000644 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000645-x a org:ChangeEvent ;
+    rdfs:label "Institute of Natural Resources and Environment - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000645 ;
+    prov:endedAtTime "1996-06-30"^^xsd:date .
+
+csiro:A000646-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Chemical Engineering Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000646 ;
+    prov:endedAtTime "1962-12-31"^^xsd:date .
+
+csiro:A000647-x a org:ChangeEvent ;
+    rdfs:label "CSIR National Standards Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000647 ;
+    prov:endedAtTime "1973-12-31"^^xsd:date .
+
+csiro:A000648-x a org:ChangeEvent ;
+    rdfs:label "CSIR Electrotechnology Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000648 ;
+    prov:endedAtTime "1945-12-31"^^xsd:date .
+
+csiro:A000649-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Applied Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000649 ;
+    prov:endedAtTime "1974-07-01"^^xsd:date .
+
+csiro:A000650-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Economic Entomology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000650 ;
+    prov:endedAtTime "1949-12-31"^^xsd:date .
+
+csiro:A000651-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Dairy Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000651 ;
+    prov:endedAtTime "1971-12-31"^^xsd:date .
+
+csiro:A000652-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Food Preservation - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000652 ;
+    prov:endedAtTime "1971-01-24"^^xsd:date .
+
+csiro:A000653-x a org:ChangeEvent ;
+    rdfs:label "Lubricants and Bearings Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000653 ;
+    prov:endedAtTime "1946-12-31"^^xsd:date .
+
+csiro:A000654-x a org:ChangeEvent ;
+    rdfs:label "Tribophysics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000654 ;
+    prov:endedAtTime "1948-12-31"^^xsd:date .
+
+csiro:A000655-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Materials Science - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000655 ;
+    prov:endedAtTime "1986-12-31"^^xsd:date .
+
+csiro:A000656-x a org:ChangeEvent ;
+    rdfs:label "Institute of Industrial Technologies - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000656 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A000657-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Computing Research Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000657 ;
+    prov:endedAtTime "1967-12-31"^^xsd:date .
+
+csiro:A000658-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Fisheries Investigations Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000658 ;
+    prov:endedAtTime "1939-12-31"^^xsd:date .
+
+csiro:A000659-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Fisheries - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000659 ;
+    prov:endedAtTime "1956-01-01"^^xsd:date .
+
+csiro:A000660-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Fisheries and Oceanography - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000660 ;
+    prov:endedAtTime "1981-12-31"^^xsd:date .
+
+csiro:A000661-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Fisheries Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000661 ;
+    prov:endedAtTime "1988-01-01"^^xsd:date .
+
+csiro:A000662-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Oceanography - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000662 ;
+    prov:endedAtTime "1997-02-01"^^xsd:date .
+
+csiro:A000663-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Fisheries - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000663 ;
+    prov:endedAtTime "1997-02-01"^^xsd:date .
+
+csiro:A000664-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Marine Sector - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000664 ;
+    prov:endedAtTime "2005-07-01"^^xsd:date .
+
+csiro:A000665-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Tropical Agriculture - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000665 ;
+    prov:endedAtTime "2000-12-31"^^xsd:date .
+
+csiro:A000666-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Tropical Agronomy - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000666 ;
+    prov:endedAtTime "1976-12-31"^^xsd:date .
+
+csiro:A000667-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Tropical Pastures - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000667 ;
+    prov:endedAtTime "1973-03-29"^^xsd:date .
+
+csiro:A000668-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Plant Industry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000668 .
+
+csiro:A000669-x a org:ChangeEvent ;
+    rdfs:label "CSIR Division of Economic Botany - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000669 ;
+    prov:endedAtTime "1929-12-31"^^xsd:date .
+
+csiro:A000670-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Land and Water - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000670 .
+
+csiro:A000671-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Water Resources - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000671 ;
+    prov:endedAtTime "1997-12-31"^^xsd:date .
+
+csiro:A000672-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Soils - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000672 ;
+    prov:endedAtTime "1997-12-31"^^xsd:date .
+
+csiro:A000673-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Groundwater Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000673 ;
+    prov:endedAtTime "1986-12-31"^^xsd:date .
+
+csiro:A000674-x a org:ChangeEvent ;
+    rdfs:label "CSIR Murray River Soil Investigation Unit - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000674 ;
+    prov:endedAtTime "1929-12-31"^^xsd:date .
+
+csiro:A000675-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Land Resources Management - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000675 ;
+    prov:endedAtTime "1982-12-31"^^xsd:date .
+
+csiro:A000676-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Land Use Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000676 ;
+    prov:endedAtTime "1982-12-31"^^xsd:date .
+
+csiro:A000677-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Land Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000677 ;
+    prov:endedAtTime "1973-12-31"^^xsd:date .
+
+csiro:A000678-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Land Research and Regional Survey - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000678 ;
+    prov:endedAtTime "1965-12-31"^^xsd:date .
+
+csiro:A000679-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Land Research and Regional Survey Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000679 ;
+    prov:endedAtTime "1957-12-31"^^xsd:date .
+
+csiro:A000680-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Northern Australian Regional Survey Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000680 ;
+    prov:endedAtTime "1950-12-31"^^xsd:date .
+
+csiro:A000681-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Applied Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000681 ;
+    prov:endedAtTime "1996-09-20"^^xsd:date .
+
+csiro:A000682-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000682 ;
+    prov:endedAtTime "1973-12-31"^^xsd:date .
+
+csiro:A000683-x a org:ChangeEvent ;
+    rdfs:label "CSIR Physics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000683 ;
+    prov:endedAtTime "1945-12-31"^^xsd:date .
+
+csiro:A000684-x a org:ChangeEvent ;
+    rdfs:label "CSIR Metrology Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000684 ;
+    prov:endedAtTime "1945-12-31"^^xsd:date .
+
+csiro:A000685-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Metrology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000685 ;
+    prov:endedAtTime "1962-12-31"^^xsd:date .
+
+csiro:A000686-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Textiles Clothing and Footwear Sector - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000686 .
+
+csiro:A000687-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mathematical Statistics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000687 ;
+    prov:endedAtTime "1974-12-31"^^xsd:date .
+
+csiro:A000688-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mechanical Engineering - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000688 ;
+    prov:endedAtTime "1981-12-31"^^xsd:date .
+
+csiro:A000690-x a org:ChangeEvent ;
+    rdfs:label "CSIRO McMaster Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000690 ;
+    prov:endedAtTime "2001-12-31"^^xsd:date .
+
+csiro:A000691-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Meat Research Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000691 ;
+    prov:endedAtTime "1992-12-31"^^xsd:date .
+
+csiro:A000692-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Pulp and Paper Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000692 .
+
+csiro:A000693-x a org:ChangeEvent ;
+    rdfs:label "Institute of Information and Communications Technologies - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000693 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A000694-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Wool Textile Research Laboratories - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000694 ;
+    prov:endedAtTime "1958-12-31"^^xsd:date .
+
+csiro:A000695-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Physics and Engineering Unit - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000695 ;
+    prov:endedAtTime "1958-12-31"^^xsd:date .
+
+csiro:A000696-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mineralogy - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000696 ;
+    prov:endedAtTime "1984-09-30"^^xsd:date .
+
+csiro:A000697-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Applied Mineralogy - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000697 ;
+    prov:endedAtTime "1970-12-31"^^xsd:date .
+
+csiro:A000698-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mineral Products - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000698 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A000699-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Process Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000699 ;
+    prov:endedAtTime "1980-12-31"^^xsd:date .
+
+csiro:A000700-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Mineragraphic Investigations - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000700 ;
+    prov:endedAtTime "1966-12-31"^^xsd:date .
+
+csiro:A000701-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Ore Dressing Investigations - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000701 ;
+    prov:endedAtTime "1970-02-28"^^xsd:date .
+
+csiro:A000702-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Coal Research Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000702 ;
+    prov:endedAtTime "1960-12-31"^^xsd:date .
+
+csiro:A000703-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Minerals Utilization Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000703 ;
+    prov:endedAtTime "1959-05-31"^^xsd:date .
+
+csiro:A000704-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Coal Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000704 ;
+    prov:endedAtTime "1967-12-31"^^xsd:date .
+
+csiro:A000705-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Cement and Ceramic Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000705 ;
+    prov:endedAtTime "1960-12-31"^^xsd:date .
+
+csiro:A000706-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Cement and Refractories Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000706 ;
+    prov:endedAtTime "1962-12-31"^^xsd:date .
+
+csiro:A000707-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Mineral Physics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000707 ;
+    prov:endedAtTime "1972-10-12"^^xsd:date .
+
+csiro:A000708-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Fuel Geoscience Unit - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000708 ;
+    prov:endedAtTime "1980-12-31"^^xsd:date .
+
+csiro:A000709-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Food Science and Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000709 ;
+    prov:endedAtTime "1997-12-31"^^xsd:date .
+
+csiro:A000727-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Animal Production - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000727 ;
+    prov:endedAtTime "2000-07-01"^^xsd:date .
+
+csiro:A000728-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Human Nutrition - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000728 ;
+    prov:endedAtTime "1996-12-31"^^xsd:date .
+
+csiro:A000729-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Animal Physiology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000729 ;
+    prov:endedAtTime "1975-12-31"^^xsd:date .
+
+csiro:A000730-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Sheep Biology Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000730 ;
+    prov:endedAtTime "1959-12-31"^^xsd:date .
+
+csiro:A000731-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Animal Genetics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000731 ;
+    prov:endedAtTime "1975-11-09"^^xsd:date .
+
+csiro:A000732-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Animal Genetics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000732 ;
+    prov:endedAtTime "1959-12-31"^^xsd:date .
+
+csiro:A000733-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Animal Health and Production - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000733 ;
+    prov:endedAtTime "1959-11-22"^^xsd:date .
+
+csiro:A000734-x a org:ChangeEvent ;
+    rdfs:label "CSIR Division of Animal Health and Nutrition - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000734 ;
+    prov:endedAtTime "1944-08-17"^^xsd:date .
+
+csiro:A000735-x a org:ChangeEvent ;
+    rdfs:label "CSIR Division of Animal Health - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000735 ;
+    prov:endedAtTime "1936-06-30"^^xsd:date .
+
+csiro:A000736-x a org:ChangeEvent ;
+    rdfs:label "CSIR Division of Animal Nutrition - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000736 ;
+    prov:endedAtTime "1936-12-31"^^xsd:date .
+
+csiro:A000737-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Nutritional Biochemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000737 ;
+    prov:endedAtTime "1975-01-01"^^xsd:date .
+
+csiro:A000738-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Biochemistry and General Nutrition - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000738 ;
+    prov:endedAtTime "1965-10-10"^^xsd:date .
+
+csiro:A000739-x a org:ChangeEvent ;
+    rdfs:label "CSIR Animal Nutrition Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000739 ;
+    prov:endedAtTime "1944-12-31"^^xsd:date .
+
+csiro:A000740-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Building Research [II] - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000740 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000741-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Canberra Laboratories - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000741 .
+
+csiro:A000742-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Molecular Science - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000742 ;
+    prov:endedAtTime "2005-12-31"^^xsd:date .
+
+csiro:A000743-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Organic Chemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000743 ;
+    prov:endedAtTime "1966-08-21"^^xsd:date .
+
+csiro:A000744-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Organic Chemistry Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000744 ;
+    prov:endedAtTime "1961-12-31"^^xsd:date .
+
+csiro:A000745-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Physical Chemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000745 ;
+    prov:endedAtTime "1966-08-22"^^xsd:date .
+
+csiro:A000746-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Telecommunications and Industrial Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000746 .
+
+csiro:A000747-x a org:ChangeEvent ;
+    rdfs:label "Industrial Atomic Energy Policy Committee - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000747 ;
+    prov:endedAtTime "1952-04-30"^^xsd:date .
+
+csiro:A000748-x a org:ChangeEvent ;
+    rdfs:label "Atomic Energy Policy Committee - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000748 ;
+    prov:endedAtTime "1952-11-30"^^xsd:date .
+
+csiro:A000749-x a org:ChangeEvent ;
+    rdfs:label "Australian Atomic Energy Commission - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000749 ;
+    prov:endedAtTime "1981-03-31"^^xsd:date .
+
+csiro:A000750-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Physics and Engineering Unit - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000750 ;
+    prov:endedAtTime "1958-12-31"^^xsd:date .
+
+csiro:A000751-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Health Sciences and Nutrition - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000751 ;
+    prov:endedAtTime "2005-07-01"^^xsd:date .
+
+csiro:A000752-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Biotechnology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000752 ;
+    prov:endedAtTime "1989-07-01"^^xsd:date .
+
+csiro:A000753-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Biomolecular Engineering - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000753 ;
+    prov:endedAtTime "1997-07-01"^^xsd:date .
+
+csiro:A000754-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Molecular Biology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000754 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000755-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Tropical Animal Production - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000755 ;
+    prov:endedAtTime "1996-12-31"^^xsd:date .
+
+csiro:A000756-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Environmental Mechanics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000756 ;
+    prov:endedAtTime "1997-12-31"^^xsd:date .
+
+csiro:A000757-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Coal and Energy Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000757 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A000758-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Fuel Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000758 ;
+    prov:endedAtTime "1990-06-30"^^xsd:date .
+
+csiro:A000759-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Energy Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000759 ;
+    prov:endedAtTime "1990-06-30"^^xsd:date .
+
+csiro:A000760-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Energy Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000760 .
+
+csiro:A000761-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Energy Chemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000761 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000762-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Engineering Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000762 ;
+    prov:endedAtTime "1963-12-31"^^xsd:date .
+
+csiro:A000763-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Meteorological Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000763 ;
+    prov:endedAtTime "1971-12-31"^^xsd:date .
+
+csiro:A000764-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Meteorological Physics Research Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000764 ;
+    prov:endedAtTime "1954-12-31"^^xsd:date .
+
+csiro:A000765-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Manufacturing Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000765 ;
+    prov:endedAtTime "1997-12-31"^^xsd:date .
+
+csiro:A000766-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Manufacturing Science and Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000766 ;
+    prov:endedAtTime "2002-07-31"^^xsd:date .
+
+csiro:A000767-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Water Resources Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000767 ;
+    prov:endedAtTime "1989-12-31"^^xsd:date .
+
+csiro:A000768-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Agricultural Physics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000768 ;
+    prov:endedAtTime "1971-12-31"^^xsd:date .
+
+csiro:A000769-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Centre for Irrigation and Freshwater Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000769 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000770-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Centre for Irrigation Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000770 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000771-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Irrigation Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000771 ;
+    prov:endedAtTime "1982-12-31"^^xsd:date .
+
+csiro:A000772-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Irrigation Research Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000772 ;
+    prov:endedAtTime "1967-08-28"^^xsd:date .
+
+csiro:A000773-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Irrigation Research Station - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000773 ;
+    prov:endedAtTime "1961-12-31"^^xsd:date .
+
+csiro:A000774-x a org:ChangeEvent ;
+    rdfs:label "Commonwealth Citrus Research Station - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000774 ;
+    prov:endedAtTime "1927-12-31"^^xsd:date .
+
+csiro:A000775-x a org:ChangeEvent ;
+    rdfs:label "CSIR Biometrics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000775 ;
+    prov:endedAtTime "1944-12-31"^^xsd:date .
+
+csiro:A000776-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Mathematical Statistics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000776 ;
+    prov:endedAtTime "1954-12-31"^^xsd:date .
+
+csiro:A000777-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mathematics and Statistics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000777 ;
+    prov:endedAtTime "1997-12-31"^^xsd:date .
+
+csiro:A000778-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mathematical and Information Sciences - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000778 .
+
+csiro:A000779-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Livestock Industries - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000779 .
+
+csiro:A000780-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Mineralogy and Geochemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000780 ;
+    prov:endedAtTime "1985-07-01"^^xsd:date .
+
+csiro:A000781-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Minerals and Geochemistry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000781 ;
+    prov:endedAtTime "1987-12-31"^^xsd:date .
+
+csiro:A000782-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Exploration and Geoscience - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000782 ;
+    prov:endedAtTime "1993-12-31"^^xsd:date .
+
+csiro:A000783-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Exploration and Mining - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000783 .
+
+csiro:A000784-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Physical Technology Unit - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000784 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000785-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Petroleum Resources - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000785 .
+
+csiro:A000786-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Geomechanics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000786 ;
+    prov:endedAtTime "1993-06-30"^^xsd:date .
+
+csiro:A000787-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Applied Geomechanics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000787 ;
+    prov:endedAtTime "1983-12-31"^^xsd:date .
+
+csiro:A000788-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Soil Mechanics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000788 ;
+    prov:endedAtTime "1970-12-31"^^xsd:date .
+
+csiro:A000789-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Soil Mechanics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000789 ;
+    prov:endedAtTime "1967-12-31"^^xsd:date .
+
+csiro:A000790-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Soil Physics and Mechanics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000790 ;
+    prov:endedAtTime "1955-12-31"^^xsd:date .
+
+csiro:A000791-x a org:ChangeEvent ;
+    rdfs:label "CSIR Soil Physics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000791 ;
+    prov:endedAtTime "1943-12-31"^^xsd:date .
+
+csiro:A000792-x a org:ChangeEvent ;
+    rdfs:label "Commonwealth Research Station, Murray Irrigation Area - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000792 ;
+    prov:endedAtTime "1962-11-30"^^xsd:date .
+
+csiro:A000793-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Horticultural Research Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000793 ;
+    prov:endedAtTime "1967-08-18"^^xsd:date .
+
+csiro:A000794-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Horticultural Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000794 ;
+    prov:endedAtTime "1988-12-31"^^xsd:date .
+
+csiro:A000795-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Horticulture - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000795 ;
+    prov:endedAtTime "1997-12-31"^^xsd:date .
+
+csiro:A000796-x a org:ChangeEvent ;
+    rdfs:label "CSIR Cold Storage Investigations - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000796 ;
+    prov:endedAtTime "1931-12-31"^^xsd:date .
+
+csiro:A000797-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Molecular and Cellular Biology Unit - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000797 ;
+    prov:endedAtTime "1983-12-31"^^xsd:date .
+
+csiro:A000798-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Wheat Research Unit - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000798 ;
+    prov:endedAtTime "1992-12-31"^^xsd:date .
+
+csiro:A000799-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Grain Quality Research Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000799 ;
+    prov:endedAtTime "1998-12-31"^^xsd:date .
+
+csiro:A000800-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Wheat Germplasm and Grain Quality - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000800 .
+
+csiro:A000885-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Minerals Research Laboratories - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000885 ;
+    prov:endedAtTime "1980-12-31"^^xsd:date .
+
+csiro:A000891-x a org:ChangeEvent ;
+    rdfs:label "Australian Meat Technology Pty Ltd - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000891 .
+
+csiro:A000998-x a org:ChangeEvent ;
+    rdfs:label "Defence Standards Laboratories - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000998 ;
+    prov:endedAtTime "1974-09-19"^^xsd:date .
+
+csiro:A000999-x a org:ChangeEvent ;
+    rdfs:label "Materials Research Laboratories - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A000999 ;
+    prov:endedAtTime "1994-03-31"^^xsd:date .
+
+csiro:A001185-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Kimberley Research Station - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A001185 .
+
+csiro:A001260-x a org:ChangeEvent ;
+    rdfs:label "Optics Section - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A001260 .
+
+csiro:A001669-x a org:ChangeEvent ;
+    rdfs:label "Australian Animal Health Laboratory (AAHL) - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A001669 .
+
+csiro:A001684-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Forestry - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A001684 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A001685-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Forest Products (mark II) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A001685 ;
+    prov:endedAtTime "1995-12-31"^^xsd:date .
+
+csiro:A001686-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Forestry and Forest Products (mark II) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A001686 ;
+    prov:endedAtTime "2007-12-31"^^xsd:date .
+
+csiro:A001687-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Sustainable Ecosystems - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A001687 .
+
+csiro:A001859-x a org:ChangeEvent ;
+    rdfs:label "Australian National Wildlife Collection (ANWC) - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A001859 .
+
+csiro:A002111-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Cloud Physics - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002111 ;
+    prov:endedAtTime "1983-04-17"^^xsd:date .
+
+csiro:A002112-x a org:ChangeEvent ;
+    rdfs:label "Commonwealth Research Station, Murrumbidgee Irrigation Area - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002112 ;
+    prov:endedAtTime "1939-12-31"^^xsd:date .
+
+csiro:A002113-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Division of Land Assessment - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002113 ;
+    prov:endedAtTime "1973-04-12"^^xsd:date .
+
+csiro:A002114-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Manufacturing and Infrastructure Technology - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002114 .
+
+csiro:A002115-x a org:ChangeEvent ;
+    rdfs:label "Australia Telescope National Facility - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002115 ;
+    prov:endedAtTime "2003-12-31"^^xsd:date .
+
+csiro:A002116-x a org:ChangeEvent ;
+    rdfs:label "L. P. Coombes Computer Centre - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002116 .
+
+csiro:A002117-x a org:ChangeEvent ;
+    rdfs:label "F. D. McMaster Animal Health Laboratory - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002117 ;
+    prov:endedAtTime "1963-12-31"^^xsd:date .
+
+csiro:A002118-x a org:ChangeEvent ;
+    rdfs:label "F. D. McMaster Laboratory, Chiswick - CSIRO - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002118 .
+
+csiro:A002245-x a org:ChangeEvent ;
+    rdfs:label "CSIR Radiophysics Laboratory - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002245 ;
+    prov:endedAtTime "1940-05-31"^^xsd:date .
+
+csiro:A002292-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Marine and Atmospheric Research - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002292 .
+
+csiro:A002293-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Manufacturing and Infrastructure Technology (CMIT) - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002293 .
+
+csiro:A002294-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Molecular and Health Technologies - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002294 .
+
+csiro:A002295-x a org:ChangeEvent ;
+    rdfs:label "CSIRO Human Nutrition - terminated"^^xsd:string ;
+    org:originalOrganization csiro:A002295 .
+
+
 csiro:A000195-i
   rdf:type org:ChangeEvent ;
   rdfs:comment "Commonwealth Institute of Science and Industry - terminated"^^xsd:string ;
