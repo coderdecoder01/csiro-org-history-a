@@ -2,7 +2,7 @@
 
 Front End Website for querying and analyzing CSIRO organizational history
 
-Website is currently available at http://23.101.230.37:3000
+Website is currently available at http://23.101.230.37
 
 # Purpose
 
