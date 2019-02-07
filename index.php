@@ -88,6 +88,8 @@ section .section-title {
   </head>
 
   <body id="page-top">
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
@@ -101,7 +103,7 @@ section .section-title {
       <div class="container">
         <section id="tabs">
           <div class="container" id="t"> 
-            <h6 class="section-title h1">Tabs</h6>
+            <h6 class="section-title h1">CISRO Organisational History</h6>
             <div class="row">
               <div class="col-xs-12 ">
                 <nav>
@@ -114,17 +116,18 @@ section .section-title {
                 </nav>
                 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-                    Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-                  </div>
+                  At CSIRO, we do the extraordinary every day. We innovate for tomorrow and help improve today - for our customers, all Australians and the world.
+We imagine. We collaborate. We innovate.</div>
                   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                     Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
                   </div>
                   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <p id="chart" style="padding: 20px;"></p>                    </div>
+                    <p id="sankey_multiple" style="padding: 55px;"></p>                    </div>
                   <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                    Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-                  </div>
+                  We do the extraordinary every day. We innovate for tomorrow and help improve today – for our customers, all Australians and the world.<br>
+
+<b>At the Commonwealth Scientific and Industrial Research Organisation (CSIRO), we shape the future. We do this by using science to solve real issues. Our research makes a difference to people, industry and the planet.</b>
+</div>
                 </div>
               
               </div>
@@ -200,7 +203,67 @@ section .section-title {
     <script src="sankey.js"></script>
     <script src="bootstrapframe/jquery/jquery.min.js"></script>
     <script src="bootstrapframe/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script>
+    <?php
+function multi_unique($src){
+    $output = array_map("unserialize",
+        array_unique(array_map("serialize", $src)));
+    return $output;
+}
+$myfile = fopen("pre.txt", "r") or die("Unable to open file!");
+$a=fgets($myfile);
+$needel="-A";
+$array = array();
+while(!feof($myfile)) {
+    if (strpos($a, $needel) !== false) {
+        $start = strpos($a, 'A');
+        $tmp = substr($a, $start,7);
+        $end = strrpos($a, 'A');
+        $tmp2 = substr($a, $end, 7);
+
+        $array[] = array($tmp, $tmp2);
+
+
+    }
+    $a=fgets($myfile);
+}
+$output=multi_unique($array);
+//print_r($output);
+
+fclose($myfile);
+?>
+<script type="text/javascript">
+    google.charts.load("current", {packages:["sankey"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var data = new google.visualization.DataTable();
+        var users = <?php echo json_encode($array); ?>;
+
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', 'Weight');
+        var arrayLength = users.length;
+        for (var i = 0; i < arrayLength; i++) {
+            data.addRows([
+                [ users[i][0],users[i][1] , 1 ]
+            ]);
+
+        }
+
+
+
+        // Set chart options
+        var options = {
+            width: 1000,
+            height: 1000
+        };
+
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+        chart.draw(data, options);
+    }
+</script>
+    <!-- <script>
 	
       var units = "Widgets";
       
@@ -299,7 +362,7 @@ section .section-title {
         }
       });
       
-      </script>
+      </script> -->
       
   </body>
 
