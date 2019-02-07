@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Csiro</title>
+    <title>CSIRO</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrapframe/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -119,7 +119,18 @@ section .section-title {
                   At CSIRO, we do the extraordinary every day. We innovate for tomorrow and help improve today - for our customers, all Australians and the world.
 We imagine. We collaborate. We innovate.</div>
                   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
+                    <h1>SPARQL</h1>
+					SPARQL (pronounced "sparkle", a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language—that is, a semantic query language for databases—able to retrieve and manipulate data stored in Resource Description Framework (RDF) format. It was made a standard by the RDF Data Access Working Group (DAWG) of the World Wide Web Consortium, and is recognized as one of the key technologies of the semantic web On 15 January 2008, SPARQL 1.0 became an official W3C Recommendation, and SPARQL 1.1 in March, 2013.
+					<dl align="left"><dt><code>SELECT</code> query</dt>
+							<dd>Used to extract raw values from a SPARQL endpoint, the results are returned in a table format.</dd>
+						<dt><code>CONSTRUCT</code> query</dt>
+							<dd>Used to extract information from the SPARQL endpoint and transform the results into valid RDF.</dd>
+						<dt><code>ASK</code> query</dt>
+							<dd>Used to provide a simple True/False result for a query on a SPARQL endpoint.</dd>
+						<dt><code>DESCRIBE</code> query</dt>
+							<dd>Used to extract an RDF graph from the SPARQL endpoint, the content of which is left to the endpoint to decide based on what the maintainer deems as useful information. Here we are providing a Workbench to manipulate data using SPARQL.</dd>
+					</dl>
+					<button onclick="window.location.href='http://23.101.230.37:7200/sparql'">Lanch GraphDB Workbench</button>
                   </div>
                   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <p id="sankey_multiple" style="padding: 55px;"></p>                    </div>
