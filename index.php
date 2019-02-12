@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>CSIRO</title>
+    <title>Csiro</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrapframe/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,9 @@ section {
     padding: 60px 0;
     height: auto;
 }
-
+textarea{
+    padding:10px;
+}
 section .section-title {
     text-align: center;
     color:#2C3E50;
@@ -69,6 +71,18 @@ section .section-title {
   shape-rendering: crispEdges;
   
 }
+    .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
 
 .node text {
   pointer-events: none;
@@ -86,7 +100,16 @@ section .section-title {
 }
   </style>
   </head>
+<script>
 
+    window.onload=function(){
+        var foo = localStorage.getItem("foo");
+        if(foo!=null){
+            document.getElementById(foo).focus();
+
+        }
+    }
+</script>
   <body id="page-top">
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -119,19 +142,16 @@ section .section-title {
                   At CSIRO, we do the extraordinary every day. We innovate for tomorrow and help improve today - for our customers, all Australians and the world.
 We imagine. We collaborate. We innovate.</div>
                   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <h1>SPARQL</h1>
-					SPARQL (pronounced "sparkle", a recursive acronym for SPARQL Protocol and RDF Query Language) is an RDF query language—that is, a semantic query language for databases—able to retrieve and manipulate data stored in Resource Description Framework (RDF) format. It was made a standard by the RDF Data Access Working Group (DAWG) of the World Wide Web Consortium, and is recognized as one of the key technologies of the semantic web On 15 January 2008, SPARQL 1.0 became an official W3C Recommendation, and SPARQL 1.1 in March, 2013.
-					<dl align="left"><dt><code>SELECT</code> query</dt>
-							<dd>Used to extract raw values from a SPARQL endpoint, the results are returned in a table format.</dd>
-						<dt><code>CONSTRUCT</code> query</dt>
-							<dd>Used to extract information from the SPARQL endpoint and transform the results into valid RDF.</dd>
-						<dt><code>ASK</code> query</dt>
-							<dd>Used to provide a simple True/False result for a query on a SPARQL endpoint.</dd>
-						<dt><code>DESCRIBE</code> query</dt>
-							<dd>Used to extract an RDF graph from the SPARQL endpoint, the content of which is left to the endpoint to decide based on what the maintainer deems as useful information. Here we are providing a Workbench to manipulate data using SPARQL.</dd>
-					</dl>
-					<button onclick="window.location.href='http://23.101.230.37:7200/sparql'">Lanch GraphDB Workbench</button>
-                  </div>
+
+                      <form action="genSQ.php" method="post">
+                          <textarea id="gen" name="gen"  rows="15" cols="134">
+Please enter SPARQL query</textarea>
+                      <br/>
+                          <input type="submit" class="button" name="someAction" value="Run" />
+                      </form></div>
+
+
+
                   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                     <p id="sankey_multiple" style="padding: 55px;"></p>                    </div>
                   <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
@@ -220,10 +240,22 @@ function multi_unique($src){
         array_unique(array_map("serialize", $src)));
     return $output;
 }
+function findname($word,$array2){
+        foreach($array2 as $var){
+            if($var[0] == $word){
+                return $var[1];
+            }
+        }
+    }
 $myfile = fopen("pre.txt", "r") or die("Unable to open file!");
 $a=fgets($myfile);
 $needel="-A";
+$org="org:Organization";
+
 $array = array();
+$array2 = array();
+    $array3 = array();
+
 while(!feof($myfile)) {
     if (strpos($a, $needel) !== false) {
         $start = strpos($a, 'A');
@@ -234,12 +266,34 @@ while(!feof($myfile)) {
         $array[] = array($tmp, $tmp2);
 
 
+    }else if(strpos($a, $org) !== false){
+        $start = strpos($a, 'A');
+        $tmp3 = substr($a, $start,7);
+        $a=fgets($myfile);
+        while(strpos($a, "foaf:name") != true){
+            $a=fgets($myfile);
+        }
+        if (preg_match('/"([^"]+)"/', $a, $m)) {
+            $array2[] = array($tmp3, $m[1]);
+        }
+
     }
     $a=fgets($myfile);
-}
-$output=multi_unique($array);
-//print_r($output);
 
+}
+foreach($array as $var){
+
+    $array3[] = array(findname($var[0],$array2),findname($var[1],$array2));
+
+}
+
+$output=multi_unique($array3);
+//print_r($output);
+    foreach ( $array3 as $var ) {
+     //  echo "\n", $var[0], "\t\t", $var[1];
+        //$dataPoints[$i]=array("label"=>$var[0], "y"=>(double)$var[1]);
+
+    }
 fclose($myfile);
 ?>
 <script type="text/javascript">
@@ -374,7 +428,6 @@ fclose($myfile);
       });
       
       </script> -->
-      
   </body>
 
 </html>
