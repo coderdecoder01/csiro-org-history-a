@@ -2,7 +2,7 @@
 require_once("sparqllib.php");
 $a = $_POST[gen];
 $data = sparql_get(
-    "http://35.188.210.88:7200/repositories/CSIRO",
+    "http://52.237.253.139:7200/repositories/CSIRO",
     $a);
 
 if (!isset($data)) {

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <title>Csiro</title>
 
     <!-- Bootstrap core CSS -->
@@ -27,9 +27,7 @@ section {
     padding: 60px 0;
     height: auto;
 }
-textarea{
-    padding:10px;
-}
+
 section .section-title {
     text-align: center;
     color:#2C3E50;
@@ -71,18 +69,6 @@ section .section-title {
   shape-rendering: crispEdges;
   
 }
-    .button {
-        background-color: #4CAF50;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
 
 .node text {
   pointer-events: none;
@@ -98,18 +84,13 @@ section .section-title {
 .link:hover {
   stroke-opacity: .5;
 }
+canvas
+{
+  position: unset !important;
+}
   </style>
   </head>
-<script>
 
-    window.onload=function(){
-        var foo = localStorage.getItem("foo");
-        if(foo!=null){
-            document.getElementById(foo).focus();
-
-        }
-    }
-</script>
   <body id="page-top">
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -131,36 +112,111 @@ section .section-title {
               <div class="col-xs-12 ">
                 <nav>
                   <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
-                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Query</a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Graph</a>
+                    <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                    <a class="nav-item nav-link" id="nav-query-tab" data-toggle="tab" href="#nav-query" role="tab" aria-controls="nav-querys" aria-selected="false">Query</a>
+                    <a class="nav-item nav-link active" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Graph</a>
                     <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">About</a>
                   </div>
                 </nav>
+
                 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                  At CSIRO, we do the extraordinary every day. We innovate for tomorrow and help improve today - for our customers, all Australians and the world.
-We imagine. We collaborate. We innovate.</div>
-                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                
+                  <div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  CSIRO do the extraordinary every day. We innovate for tomorrow and help improve today-for our customers,all Australians and the world.
+                  We imagine. We collaborate. We innovate.
+                  </div>
 
-                      <form action="genSQ.php" method="post">
-                          <textarea id="gen" name="gen"  rows="15" cols="134">
-Please enter SPARQL query</textarea>
-                      <br/>
-                          <input type="submit" class="button" name="someAction" value="Run" />
-                      </form></div>
+                  <div class="tab-pane fade" id="nav-query" role="tabpanel" aria-labelledby="nav-query-tab"> 
+                          <form action="genSQ.php" method="post">
+                                  <textarea id="gen" name="gen"  rows="15" cols="134">
+                            Please enter SPARQL query</textarea>
+                              <br/>
+                                  <input type="submit" class="button" name="someAction" value="Run" />
+                              </form>
+                      </div>
+                  
+                  <div class="tab-pane fade show active" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="margin-left:10px;">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Sankey</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Pie Chart</a>
+                          </li>
+                          <li class="nav-item">
+                          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Table</a>
+                          </li>
+                        </ul>
+                       <div class="tab-content" id="pills-tabContent">
+                          <div class="tab-pane fade show active" id="pills-home-tab" role="tabpanel" aria-labelledby="pills-home-tab"> 
+                          <p id="sankey_multiple" style="padding: 55px;"></p>
+                          </div>
+                          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                          <p id="chartContainer"style="padding: 55px; position: initial !important;"></p>
+                          </div>
+                          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <?php
+                              require_once( "sparqllib.php" );
 
+                              $data = sparql_get(
+                                "http://52.237.253.139:7200/repositories/CSIRO?query= ",
+                                "
+                              PREFIX org: <http://www.w3.org/ns/org%23>
+                            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+                            SELECT Distinct (?x AS ?Organisation) (count(?y) As ?Number_of_Members)
+                            WHERE{
+                            ?x org:hasMember ?y .
+                            }
+                            GROUP BY ?x
+                            " );
 
+                              if( !isset($data) )
+                              {
+                                print "<p>Error: ".sparql_errno().": ".sparql_error()."</p>";
+                              }
+                              print "<table class='example_table'>";
+                              print "<tr>";
+                              foreach( $data->fields() as $field )
+                              {
+                                  print "<th>$field</th>";
+                              }
+                              print "</tr>";
+                              $array = array();
 
-                  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <p id="sankey_multiple" style="padding: 55px;"></p>                    </div>
+                              foreach( $data as $row )
+                              {
+                                  print "<tr>";
+                                  $a=0;
+                                  foreach( $data->fields() as $field )
+                                  {
+                                      print "<td>$row[$field]</td>";
+                                      if($a==0){
+                                          $tmp1=$row[$field];
+                                          $a++;
+                                      }else{
+                                          $tmp2=$row[$field];
+                                          $array[] = array($tmp1, $tmp2);
+
+                                      }
+                                  }
+                                  print "</tr>";
+                              }
+                              print "</table>";
+                              $i=0;
+                              $dataPoints=array();
+                              foreach ( $array as $var ) {
+                                  $dataPoints[]=array("label"=>$var[0], "y"=>(double)$var[1]);
+                              }
+
+                            ?>
+                          </div>
+                      </div>
+                    </div>
                   <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-                  We do the extraordinary every day. We innovate for tomorrow and help improve today – for our customers, all Australians and the world.<br>
-
-<b>At the Commonwealth Scientific and Industrial Research Organisation (CSIRO), we shape the future. We do this by using science to solve real issues. Our research makes a difference to people, industry and the planet.</b>
-</div>
+                                  We do the extraordinary every day. We innovate for tomorrow and help improve today – for our customers, all Australians and the world.<br>
+                   <b>At the Commonwealth Scientific and Industrial Research Organisation (CSIRO), we shape the future. We do this by using science to solve real issues. Our research makes a difference to people, industry and the planet.</b>
                 </div>
-              
+                </div>
               </div>
             </div>
           </div>
@@ -186,11 +242,7 @@ Please enter SPARQL query</textarea>
                   <i class="fab fa-fw fa-facebook-f"></i>
                 </a>
               </li>
-              <!-- <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-google-plus-g"></i>
-                </a>
-              </li> -->
+
               <li class="list-inline-item">
                 <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://twitter.com/CSIROnews">
                   <i class="fab fa-fw fa-twitter"></i>
@@ -201,11 +253,6 @@ Please enter SPARQL query</textarea>
                   <i class="fab fa-fw fa-linkedin-in"></i>
                 </a>
               </li>
-              <!-- <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fab fa-fw fa-dribbble"></i>
-                </a>
-              </li> -->
             </ul>
           </div>
           <div class="col-md-4">
@@ -229,73 +276,21 @@ Please enter SPARQL query</textarea>
         <i class="fa fa-chevron-up"></i>
       </a>
     </div>
+
     <!-- Bootstrap core JavaScript -->
     <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="sankey.js"></script>
-    <script src="bootstrapframe/jquery/jquery.min.js"></script>
-    <script src="bootstrapframe/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <?php
-function multi_unique($src){
-    $output = array_map("unserialize",
-        array_unique(array_map("serialize", $src)));
-    return $output;
-}
-function findname($word,$array2){
-        foreach($array2 as $var){
-            if($var[0] == $word){
-                return $var[1];
-            }
-        }
-    }
-$myfile = fopen("pre.txt", "r") or die("Unable to open file!");
-$a=fgets($myfile);
-$needel="-A";
-$org="org:Organization";
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
 
-$array = array();
-$array2 = array();
-    $array3 = array();
-
-while(!feof($myfile)) {
-    if (strpos($a, $needel) !== false) {
-        $start = strpos($a, 'A');
-        $tmp = substr($a, $start,7);
-        $end = strrpos($a, 'A');
-        $tmp2 = substr($a, $end, 7);
-
-        $array[] = array($tmp, $tmp2);
+   
 
 
-    }else if(strpos($a, $org) !== false){
-        $start = strpos($a, 'A');
-        $tmp3 = substr($a, $start,7);
-        $a=fgets($myfile);
-        while(strpos($a, "foaf:name") != true){
-            $a=fgets($myfile);
-        }
-        if (preg_match('/"([^"]+)"/', $a, $m)) {
-            $array2[] = array($tmp3, $m[1]);
-        }
 
-    }
-    $a=fgets($myfile);
-
-}
-foreach($array as $var){
-
-    $array3[] = array(findname($var[0],$array2),findname($var[1],$array2));
-
-}
-
-$output=multi_unique($array3);
-//print_r($output);
-    foreach ( $array3 as $var ) {
-     //  echo "\n", $var[0], "\t\t", $var[1];
-        //$dataPoints[$i]=array("label"=>$var[0], "y"=>(double)$var[1]);
-
-    }
-fclose($myfile);
-?>
 <script type="text/javascript">
     google.charts.load("current", {packages:["sankey"]});
     google.charts.setOnLoadCallback(drawChart);
@@ -313,13 +308,10 @@ fclose($myfile);
             ]);
 
         }
-
-
-
         // Set chart options
         var options = {
             width: 1000,
-            height: 1000
+            height: 1200
         };
 
 
@@ -328,106 +320,30 @@ fclose($myfile);
         chart.draw(data, options);
     }
 </script>
-    <!-- <script>
-	
-      var units = "Widgets";
-      
-      var margin = {top: 10, right: 10, bottom: 10, left: 10},
-          width = 1070 - margin.left - margin.right,
-          height = 500 - margin.top - margin.bottom;
-      
-      var formatNumber = d3.format(",.0f"),    // zero decimal places
-          format = function(d) { return formatNumber(d) + " " + units; },
-          color = d3.scale.category20();
-      
-      // append the svg canvas to the page
-      var svg = d3.select("#chart").append("svg")
-          .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-          .attr("transform", 
-                "translate(" + margin.left + "," + margin.top + ")");
-      
-      // Set the sankey diagram properties
-      var sankey = d3.sankey()
-          .nodeWidth(36)
-          .nodePadding(40)
-          .size([width, height]);
-      
-      var path = sankey.link();
-      
-      // load the data
-      d3.json("sankey-formatted.json", function(error, graph) {
-      
-        sankey
-            .nodes(graph.nodes)
-            .links(graph.links)
-            .layout(32);
-      
-      // add in the links
-        var link = svg.append("g").selectAll(".link")
-            .data(graph.links)
-          .enter().append("path")
-            .attr("class", "link")
-            .attr("d", path)
-            .style("stroke-width", function(d) { return Math.max(1, d.dy); })
-            .sort(function(a, b) { return b.dy - a.dy; });
-      
-      // add the link titles
-        link.append("title")
-              .text(function(d) {
-              return d.source.name + " → " + 
-                      d.target.name + "\n" + format(d.value); });
-      
-      // add in the nodes
-        var node = svg.append("g").selectAll(".node")
-            .data(graph.nodes)
-          .enter().append("g")
-            .attr("class", "node")
-            .attr("transform", function(d) { 
-            return "translate(" + d.x + "," + d.y + ")"; })
-          .call(d3.behavior.drag()
-            .origin(function(d) { return d; })
-            .on("dragstart", function() { 
-            this.parentNode.appendChild(this); })
-            .on("drag", dragmove));
-      
-      // add the rectangles for the nodes
-        node.append("rect")
-            .attr("height", function(d) { return d.dy; })
-            .attr("width", sankey.nodeWidth())
-            .style("fill", function(d) { 
-            return d.color = color(d.name.replace(/ .*/, "")); })
-            .style("stroke", function(d) { 
-            return d3.rgb(d.color).darker(2); })
-          .append("title")
-            .text(function(d) { 
-            return d.name + "\n" + format(d.value); });
-      
-      // add in the title for the nodes
-        node.append("text")
-            .attr("x", -6)
-            .attr("y", function(d) { return d.dy / 2; })
-            .attr("dy", ".35em")
-            .attr("text-anchor", "end")
-            .attr("transform", null)
-            .text(function(d) { return d.name; })
-          .filter(function(d) { return d.x < width / 2; })
-            .attr("x", 6 + sankey.nodeWidth())
-            .attr("text-anchor", "start");
-      
-      // the function for moving the nodes
-        function dragmove(d) {
-          d3.select(this).attr("transform", 
-              "translate(" + d.x + "," + (
-                      d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
-                  ) + ")");
-          sankey.relayout();
-          link.attr("d", path);
+<script>
+        window.onload = function() {
+
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Number of Members in each Unit"
+                },
+                subtitles: [{
+                    text: "CSIRO"
+                }],
+                data: [{
+                    type: "pie",
+                    indexLabel: "{label} ({y})",
+                    fontsize: 4,
+                     is3D: true,
+                    dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+                }]
+            });
+            chart.render();
+
         }
-      });
-      
-      </script> -->
+    </script>
   </body>
 
 </html>
