@@ -1,26 +1,31 @@
 <?php
-require_once("sparqllib.php");
-$a = $_POST[gen];
+ini_set('display_errors', 1);
+require_once( "sparqllib.php" );
+//$a = $_POST[gen];
 $data = sparql_get(
     "http://52.237.253.139:7200/repositories/CSIRO",
-    $a);
+                                "
+                            PREFIX org: <http://www.w3.org/ns/org#>
+                            PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+                            SELECT Distinct (?x AS ?Organisation) (count(?y) As ?Number_of_Members)
+                            WHERE{
+                            ?x org:hasMember ?y .
+                            }
+                            GROUP BY ?x");
 
 if (!isset($data)) {
     //print "<p>Error: ".sparql_errno().": ".sparql_error()."</p>";
 }
 //print "<table class='example_table'>";
 //print "<tr>";
-foreach ($data->fields() as $field) {
-    // print "<th>$field</th>";
-}
 //print "</tr>";
 $array = array();
 
 foreach ($data as $row) {
-    //  print "<tr>";
+      print "<tr>";
     $a = 0;
     foreach ($data->fields() as $field) {
-        //     print "<td>$row[$field]</td>";
+             //print "<td>$row[$field]</td>";
         if ($a == 0) {
             $tmp1 = $row[$field];
             $a++;
@@ -30,7 +35,7 @@ foreach ($data as $row) {
 
         }
     }
-    // print "</tr>";
+     //print "</tr>";
 }
 //print "</table>";
 /*echo "sfsffsfd".$array[0][1];
