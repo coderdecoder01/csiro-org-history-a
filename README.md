@@ -2,7 +2,7 @@
 
 Front End Website for querying and analyzing CSIRO organizational history
 
-Website is currently available at http://35.188.210.88
+
 
 # Purpose
 
